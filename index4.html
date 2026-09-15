@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Cálculo do Valor Final da Compra</h1>
+
+    <script> 
+        let valorTotal = parseFloat(prompt("Digite o valor total da compra (R$):"))
+
+        let opcaoPagamento = prompt(
+            "Escolha sua boneca fovorita:\n"+
+            "1 - Dinheiro/Pix (10% de desconto)\n"+
+            "2 - Débito (5% de desconto)\n"+
+            "3 - Crédito (sem desconto)\n"
+            );
+
+        let valorFinal;
+        let formaPagamento;
+
+
+        switch (opcaoPagamento){
+        case 1:
+            formaPagamento = "Dinheiro/Pix";
+            valorFinal = valorTotal * 0.90;
+            break;
+        case 2:
+            formaPagamento = "Débito";
+            valorFinal = valorTotal * 0.95;
+            break;
+        case 3:
+            formaPagamento = "Crédito";
+            valorFinal = valorTotal;
+            break;
+        default:
+            "Erro"
+            break;
+
+        }
+        if (isNaN(valorTotal)) {
+            document.write("<p>Valor total inválido.<\p>")
+        } else if (valorFinal !== null){
+            document.write("<p>Forma de pagamento:" + formaPagamento + "<\p>");
+            document.write("<p>Valor final a ser pago: R$ " + valorFinal.toFixed(2) + "<\p>");
+        } else {
+            document.write("<p>Opção inválida. Por favor, escolha um número de 1 a 3.<\p>"); 
+        }
+    </script>
+</body>
+</html>

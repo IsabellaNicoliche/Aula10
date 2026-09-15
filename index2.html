@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gênero Musical Preferido</title>
+</head>
+<body>
+    <h1>Seleção de Gênero Musical Preferido</h1>
+
+    <script> 
+        let opcao = parseInt(prompt(
+            "Escolha seu gênero musical preferido:\n"+
+            "1 - Rock\n"+
+            "2 - Pop\n"+
+            "3 - Hip hop\n"+
+            "4 - Eletrônica\n"+
+            "5 - Jazz\n"+
+            "6 - Clássica\n"
+            ));
+
+        let genero;
+
+        switch (opcao){
+        case 1:
+            estilo = "Rock";
+            break;
+        case 2:
+            estilo = "Pop";
+            break;
+        case 3:
+            estilo = "Hip hop";
+            break;
+        case 4:
+            estilo = "Eletrônica";
+            break;
+        case 5:
+            estilo = "Jazz";
+            break;
+        case 6:
+            estilo = "Clássica";
+            break;
+        default:
+            "Erro"
+            break;
+
+        }
+        if (estilo) {
+        document.write("<p>Seu estilo de gênero musical favorito é: " + estilo + "<\p>")
+        } else {
+        document.write("<p>Opção inválida. Por favor escolha um número entre 1 e 6.<\p>")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo de Filme Favorito</title>
+</head>
+<body>
+    <h1>Qual seu estilo de filme favorito?</h1>
+      
+<script>
+    let opcao = parseInt(prompt(
+    "Digite o número correspondente à sua opção:\n"+
+    "1 - Ação\n"+
+    "2 - Comédia\n"+
+    "3 - Drama\n"+
+    "4 - Ficção Científica\n"+
+    "5 - Romance\n"+
+    "6 - Terror\n"
+    ));
+
+    let estilo;
+
+    switch (opcao){
+        case 1:
+            estilo = "Ação";
+            break;
+        case 2:
+            estilo = "Comédia";
+            break;
+        case 3:
+            estilo = "Drama";
+            break;
+        case 4:
+            estilo = "Ficção Científica";
+            break;
+        case 5:
+            estilo = "Romance";
+            break;
+        case 6:
+            estilo = "Terror";
+            break;
+        default:
+            "rttt"
+            break;
+
+    }
+   if (estilo) {
+    document.write("<p>Seu estilo de filme favorito é: " + estilo + "<\p>")
+   } else {
+    document.write("<p>Opção inválida. Por favor escolha um número entre 1 e 6.<\p>")
+   }
+</script>
+</body>
+</html>

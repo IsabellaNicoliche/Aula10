@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Seleção de Bonecas</h1>
+
+    <script> 
+        let opcao = parseInt(prompt(
+            "Escolha sua boneca fovorita:\n"+
+            "1 - Barbie\n"+
+            "2 - Monster High\n"+
+            "3 - Bratz\n"+
+            "4 - Rainbow High\n"+
+            "5 - Mirror Mi\n"+
+            "6 - Disney Doll\n"
+            ));
+
+        let genero;
+
+        switch (opcao){
+        case 1:
+            estilo = "Barbie";
+            break;
+        case 2:
+            estilo = "Monster High";
+            break;
+        case 3:
+            estilo = "Bratz";
+            break;
+        case 4:
+            estilo = "Rainbow High";
+            break;
+        case 5:
+            estilo = "Mirror Mi";
+            break;
+        case 6:
+            estilo = "Disney Doll";
+            break;
+        default:
+            "Erro"
+            break;
+
+        }
+        if (estilo) {
+        document.write("<p>Sua boneca favorita é: " + estilo + "<\p>")
+        } else {
+        document.write("<p>Opção inválida. Por favor escolha um número entre 1 e 6.<\p>")
+        }
+    </script>
+</body>
+</html>
