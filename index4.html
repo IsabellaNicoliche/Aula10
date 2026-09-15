@@ -11,12 +11,12 @@
     <script> 
         let valorTotal = parseFloat(prompt("Digite o valor total da compra (R$):"))
 
-        let opcaoPagamento = prompt(
+        let opcaoPagamento = parseInt(prompt(
             "Escolha sua boneca fovorita:\n"+
             "1 - Dinheiro/Pix (10% de desconto)\n"+
             "2 - Débito (5% de desconto)\n"+
             "3 - Crédito (sem desconto)\n"
-            );
+            ));
 
         let valorFinal;
         let formaPagamento;
